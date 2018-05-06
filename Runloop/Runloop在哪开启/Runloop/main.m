@@ -15,6 +15,7 @@ int main(int argc, char * argv[]) {
         //如果直接返回一个值，相当于线程执行一次，直接结束
         //return 0;
         
+        printf("UIApplicationMain开启主线程Runloop");
         int ret = UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
         //因为主线程默认开启了runloop，导致不会执行下面的代码
         printf("这里的打印执行不到");
