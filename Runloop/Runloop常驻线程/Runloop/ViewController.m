@@ -97,5 +97,10 @@
     NSLog(@"新建的任务二所在线程%@", [NSThread currentThread]);
     NSLog(@"新建的任务二");
 }
+
+- (void)dealloc {
+    
+}
+
 @end
 
