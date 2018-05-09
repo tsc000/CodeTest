@@ -14,6 +14,9 @@
 #import "ChangeModel.h"
 #import "NSObject+TSCKeyValue.h"
 #import "Cat.h"
+#import "Son.h"
+#import "NSObject+Sark.h"
+#import "StackOffset.h"
 
 @interface ViewController ()
 
@@ -43,6 +46,28 @@
                         };
 }
 
+- (IBAction)offsetButtonDidClick:(UIButton *)sender {
+    
+    NSString *name = @"tsc";
+    id cls = [StackOffset class];
+    void *obj = &cls;
+    [(__bridge id)obj speak];
+    
+}
+
+//测试分类方法
+- (IBAction)sarkButtonDidClick:(UIButton *)sender {
+    
+    //    // 测试代码
+    [NSObject foo];
+    [[NSObject new] foo];
+    
+    id isa = [NSObject valueForKey:@"isa"];
+//    id class = [NSObject class];
+//    NSLog(@"%@", class);
+    
+    NSLog(@"%@", isa);
+}
 
 //动态方法解析
 - (IBAction)resolveButtonDidClick:(UIButton *)sender {
@@ -103,6 +128,9 @@
 
 
 - (IBAction)fatherSonButtonDidClICK:(UIButton *)sender {
+
+    Son *son = [[Son alloc] init];
+    
 
 //    objc_setAssociatedObject
     //    objc_super;

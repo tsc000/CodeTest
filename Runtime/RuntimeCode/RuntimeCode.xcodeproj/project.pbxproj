@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5977351E20A1394B000A537F /* NSObject+Sark.m in Sources */ = {isa = PBXBuildFile; fileRef = 5977351D20A1394B000A537F /* NSObject+Sark.m */; };
+		5977352220A151A7000A537F /* StackOffset.m in Sources */ = {isa = PBXBuildFile; fileRef = 5977352120A151A7000A537F /* StackOffset.m */; };
 		59BF420E209FE8FD003B2C83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BF420D209FE8FD003B2C83 /* AppDelegate.m */; };
 		59BF4211209FE8FD003B2C83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BF4210209FE8FD003B2C83 /* ViewController.m */; };
 		59BF4214209FE8FD003B2C83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59BF4212209FE8FD003B2C83 /* Main.storyboard */; };
@@ -26,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5977351C20A1394B000A537F /* NSObject+Sark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Sark.h"; sourceTree = "<group>"; };
+		5977351D20A1394B000A537F /* NSObject+Sark.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Sark.m"; sourceTree = "<group>"; };
+		5977352020A151A7000A537F /* StackOffset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackOffset.h; sourceTree = "<group>"; };
+		5977352120A151A7000A537F /* StackOffset.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackOffset.m; sourceTree = "<group>"; };
 		59BF4209209FE8FD003B2C83 /* RuntimeCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuntimeCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59BF420C209FE8FD003B2C83 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		59BF420D209FE8FD003B2C83 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -69,6 +75,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5977351820A138E6000A537F /* Sark */ = {
+			isa = PBXGroup;
+			children = (
+				5977351C20A1394B000A537F /* NSObject+Sark.h */,
+				5977351D20A1394B000A537F /* NSObject+Sark.m */,
+			);
+			path = Sark;
+			sourceTree = "<group>";
+		};
+		5977351F20A1518E000A537F /* StackOffset */ = {
+			isa = PBXGroup;
+			children = (
+				5977352020A151A7000A537F /* StackOffset.h */,
+				5977352120A151A7000A537F /* StackOffset.m */,
+			);
+			path = StackOffset;
+			sourceTree = "<group>";
+		};
 		59BF4200209FE8FD003B2C83 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +112,8 @@
 		59BF420B209FE8FD003B2C83 /* RuntimeCode */ = {
 			isa = PBXGroup;
 			children = (
+				5977351F20A1518E000A537F /* StackOffset */,
+				5977351820A138E6000A537F /* Sark */,
 				59BF423C20A03056003B2C83 /* 动态方法解析 */,
 				59BF423520A020D3003B2C83 /* 字典模型转换 */,
 				59BF423120A009DB003B2C83 /* 自动归档 */,
@@ -246,12 +272,14 @@
 				59BF424220A0307E003B2C83 /* Bird.m in Sources */,
 				59BF423820A02102003B2C83 /* NSObject+TSCKeyValue.m in Sources */,
 				59BF4211209FE8FD003B2C83 /* ViewController.m in Sources */,
+				5977352220A151A7000A537F /* StackOffset.m in Sources */,
 				59BF4230209FFBC2003B2C83 /* UIButton+Click.m in Sources */,
 				59BF421C209FE8FD003B2C83 /* main.m in Sources */,
 				59BF4225209FEB03003B2C83 /* TestMsgClass.m in Sources */,
 				59BF420E209FE8FD003B2C83 /* AppDelegate.m in Sources */,
 				59BF423420A01691003B2C83 /* AutomaticArchive.m in Sources */,
 				59BF4229209FF649003B2C83 /* Father.m in Sources */,
+				5977351E20A1394B000A537F /* NSObject+Sark.m in Sources */,
 				59BF423B20A0230C003B2C83 /* ChangeModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
