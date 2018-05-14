@@ -35,6 +35,7 @@
 #endif
 }
 
+//+ (BOOL)resolveClassMethod:(SEL)sel
 
 //2.resolveInstanceMethod: 方法返回 NO 时，就会进入 forwardingTargetForSelector: 方法，
 //这是 Runtime 给我们的第二次机会，用于指定哪个对象响应这个 selector。返回nil，进入下一步，返回某个对象，则会调用该对象的方法。
