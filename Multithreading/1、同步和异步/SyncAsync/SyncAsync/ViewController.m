@@ -35,9 +35,9 @@
     
 //    [self serialQueueDeakLock];
     
-    [self serialQueueHandleDeakLock];
+//    [self serialQueueHandleDeakLock];
     
-//    [self concurrentQueueHandleDeadLock];
+    [self concurrentQueueHandleDeadLock];
 }
 
 //并发队列解死锁
@@ -61,8 +61,8 @@
 
 //串行队列解死锁
 - (void)serialQueueHandleDeakLock {
-    dispatch_queue_t queue = dispatch_queue_create("test", DISPATCH_QUEUE_PRIORITY_DEFAULT);
-    dispatch_queue_t queue2 = dispatch_queue_create("test1", DISPATCH_QUEUE_PRIORITY_DEFAULT);
+    dispatch_queue_t queue = dispatch_queue_create("test", DISPATCH_QUEUE_SERIAL);
+    dispatch_queue_t queue2 = dispatch_queue_create("test1", DISPATCH_QUEUE_SERIAL);
     
     NSLog(@"任务一: %@", [NSThread currentThread]);
     dispatch_async(queue, ^{
@@ -82,7 +82,11 @@
 
 //串行队列死锁
 - (void)serialQueueDeakLock {
-    dispatch_queue_t queue = dispatch_queue_create("test", DISPATCH_QUEUE_PRIORITY_DEFAULT);
+    
+    //para1: 标识
+    //para2: 队列类型  NULL或DISPATCH_QUEUE_SERIAL表示串行队列  DISPATCH_QUEUE_CONCURRENT并发队列
+    
+    dispatch_queue_t queue = dispatch_queue_create("test", DISPATCH_QUEUE_SERIAL);
     
     NSLog(@"任务一: %@", [NSThread currentThread]);
     dispatch_async(queue, ^{
@@ -199,7 +203,7 @@
     //       __QOS_CLASS_AVAILABLE(macos(10.10), ios(8.0)) = 0x00,
     //       );
     
-    //para: flag
+    //para: flag  优先级
     //#define DISPATCH_QUEUE_PRIORITY_HIGH 2
     //#define DISPATCH_QUEUE_PRIORITY_DEFAULT 0
     //#define DISPATCH_QUEUE_PRIORITY_LOW (-2)
