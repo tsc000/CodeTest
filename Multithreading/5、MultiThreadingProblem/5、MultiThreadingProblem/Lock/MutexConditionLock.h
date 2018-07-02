@@ -1,5 +1,5 @@
 //
-//  SpinLock.h
+//  MutexConditionLock.h
 //  5、MultiThreadingProblem
 //
 //  Created by 童世超 on 2018/7/2.
@@ -8,7 +8,9 @@
 
 #import "NormalTips.h"
 
-//自旋锁已经被 遗弃
-@interface SpinLock : NormalTips
+//互斥锁 条件
+@interface MutexConditionLock : NormalTips
+
+- (void)conditionTest;
 
 @end

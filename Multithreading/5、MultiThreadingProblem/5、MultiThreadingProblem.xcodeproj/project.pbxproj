@@ -8,17 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		E781A5A920E5FC0E00B9A466 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5A820E5FC0E00B9A466 /* AppDelegate.m */; };
-		E781A5AC20E5FC0E00B9A466 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5AB20E5FC0E00B9A466 /* ViewController.m */; };
 		E781A5AF20E5FC0E00B9A466 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E781A5AD20E5FC0E00B9A466 /* Main.storyboard */; };
 		E781A5B120E5FC1000B9A466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E781A5B020E5FC1000B9A466 /* Assets.xcassets */; };
 		E781A5B420E5FC1000B9A466 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E781A5B220E5FC1000B9A466 /* LaunchScreen.storyboard */; };
 		E781A5B720E5FC1000B9A466 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5B620E5FC1000B9A466 /* main.m */; };
 		E781A5C120E5FC1000B9A466 /* __MultiThreadingProblemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5C020E5FC1000B9A466 /* __MultiThreadingProblemTests.m */; };
 		E781A5CC20E5FC1000B9A466 /* __MultiThreadingProblemUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5CB20E5FC1000B9A466 /* __MultiThreadingProblemUITests.m */; };
-		E781A5DB20E6070A00B9A466 /* BankMoneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5DA20E6070A00B9A466 /* BankMoneyViewController.m */; };
-		E781A5DE20E6071800B9A466 /* SellTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5DD20E6071700B9A466 /* SellTicketViewController.m */; };
 		E781A5F120E9B38D00B9A466 /* SpinLock.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5F020E9B38D00B9A466 /* SpinLock.m */; };
 		E781A5F420E9B68000B9A466 /* NormalTips.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5F220E9B68000B9A466 /* NormalTips.m */; };
+		E781A5F720E9BF2400B9A466 /* UnfairLock.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5F620E9BF2400B9A466 /* UnfairLock.m */; };
+		E781A5FA20E9C3F000B9A466 /* MutexLock.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5F920E9C3F000B9A466 /* MutexLock.m */; };
+		E781A5FD20E9D53C00B9A466 /* MutexRecursiveLock.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5FC20E9D53C00B9A466 /* MutexRecursiveLock.m */; };
+		E781A60320E9F8D900B9A466 /* MutexConditionLock.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A60220E9F8D900B9A466 /* MutexConditionLock.m */; };
+		E781A60D20E9FD5300B9A466 /* SellTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A60620E9FD5300B9A466 /* SellTicketViewController.m */; };
+		E781A60E20E9FD5300B9A466 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A60720E9FD5300B9A466 /* ViewController.m */; };
+		E781A60F20E9FD5300B9A466 /* BankMoneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A60820E9FD5300B9A466 /* BankMoneyViewController.m */; };
+		E781A61020E9FD5300B9A466 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A60A20E9FD5300B9A466 /* OtherViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +47,6 @@
 		E781A5A420E5FC0E00B9A466 /* 5、MultiThreadingProblem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "5、MultiThreadingProblem.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E781A5A720E5FC0E00B9A466 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E781A5A820E5FC0E00B9A466 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E781A5AA20E5FC0E00B9A466 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E781A5AB20E5FC0E00B9A466 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E781A5AE20E5FC0E00B9A466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E781A5B020E5FC1000B9A466 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E781A5B320E5FC1000B9A466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,14 +58,26 @@
 		E781A5C720E5FC1000B9A466 /* 5、MultiThreadingProblemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "5、MultiThreadingProblemUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E781A5CB20E5FC1000B9A466 /* __MultiThreadingProblemUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __MultiThreadingProblemUITests.m; sourceTree = "<group>"; };
 		E781A5CD20E5FC1000B9A466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E781A5D920E6070A00B9A466 /* BankMoneyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankMoneyViewController.h; sourceTree = "<group>"; };
-		E781A5DA20E6070A00B9A466 /* BankMoneyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankMoneyViewController.m; sourceTree = "<group>"; };
-		E781A5DC20E6071700B9A466 /* SellTicketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SellTicketViewController.h; sourceTree = "<group>"; };
-		E781A5DD20E6071700B9A466 /* SellTicketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SellTicketViewController.m; sourceTree = "<group>"; };
 		E781A5EF20E9B38D00B9A466 /* SpinLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpinLock.h; sourceTree = "<group>"; };
 		E781A5F020E9B38D00B9A466 /* SpinLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpinLock.m; sourceTree = "<group>"; };
 		E781A5F220E9B68000B9A466 /* NormalTips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalTips.m; sourceTree = "<group>"; };
 		E781A5F320E9B68000B9A466 /* NormalTips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalTips.h; sourceTree = "<group>"; };
+		E781A5F520E9BF2400B9A466 /* UnfairLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnfairLock.h; sourceTree = "<group>"; };
+		E781A5F620E9BF2400B9A466 /* UnfairLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnfairLock.m; sourceTree = "<group>"; };
+		E781A5F820E9C3F000B9A466 /* MutexLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MutexLock.h; sourceTree = "<group>"; };
+		E781A5F920E9C3F000B9A466 /* MutexLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MutexLock.m; sourceTree = "<group>"; };
+		E781A5FB20E9D53C00B9A466 /* MutexRecursiveLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MutexRecursiveLock.h; sourceTree = "<group>"; };
+		E781A5FC20E9D53C00B9A466 /* MutexRecursiveLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MutexRecursiveLock.m; sourceTree = "<group>"; };
+		E781A60120E9F8D900B9A466 /* MutexConditionLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MutexConditionLock.h; sourceTree = "<group>"; };
+		E781A60220E9F8D900B9A466 /* MutexConditionLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MutexConditionLock.m; sourceTree = "<group>"; };
+		E781A60520E9FD5300B9A466 /* OtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
+		E781A60620E9FD5300B9A466 /* SellTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SellTicketViewController.m; sourceTree = "<group>"; };
+		E781A60720E9FD5300B9A466 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E781A60820E9FD5300B9A466 /* BankMoneyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankMoneyViewController.m; sourceTree = "<group>"; };
+		E781A60920E9FD5300B9A466 /* SellTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SellTicketViewController.h; sourceTree = "<group>"; };
+		E781A60A20E9FD5300B9A466 /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
+		E781A60B20E9FD5300B9A466 /* BankMoneyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankMoneyViewController.h; sourceTree = "<group>"; };
+		E781A60C20E9FD5300B9A466 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,20 +128,15 @@
 		E781A5A620E5FC0E00B9A466 /* 5、MultiThreadingProblem */ = {
 			isa = PBXGroup;
 			children = (
+				E781A60420E9FD5300B9A466 /* Controller */,
 				E781A5DF20E9B03C00B9A466 /* Lock */,
 				E781A5A720E5FC0E00B9A466 /* AppDelegate.h */,
 				E781A5A820E5FC0E00B9A466 /* AppDelegate.m */,
-				E781A5AA20E5FC0E00B9A466 /* ViewController.h */,
-				E781A5AB20E5FC0E00B9A466 /* ViewController.m */,
 				E781A5AD20E5FC0E00B9A466 /* Main.storyboard */,
 				E781A5B020E5FC1000B9A466 /* Assets.xcassets */,
 				E781A5B220E5FC1000B9A466 /* LaunchScreen.storyboard */,
 				E781A5B520E5FC1000B9A466 /* Info.plist */,
 				E781A5B620E5FC1000B9A466 /* main.m */,
-				E781A5D920E6070A00B9A466 /* BankMoneyViewController.h */,
-				E781A5DA20E6070A00B9A466 /* BankMoneyViewController.m */,
-				E781A5DC20E6071700B9A466 /* SellTicketViewController.h */,
-				E781A5DD20E6071700B9A466 /* SellTicketViewController.m */,
 			);
 			path = "5、MultiThreadingProblem";
 			sourceTree = "<group>";
@@ -156,8 +166,31 @@
 				E781A5F220E9B68000B9A466 /* NormalTips.m */,
 				E781A5EF20E9B38D00B9A466 /* SpinLock.h */,
 				E781A5F020E9B38D00B9A466 /* SpinLock.m */,
+				E781A5F520E9BF2400B9A466 /* UnfairLock.h */,
+				E781A5F620E9BF2400B9A466 /* UnfairLock.m */,
+				E781A5F820E9C3F000B9A466 /* MutexLock.h */,
+				E781A5F920E9C3F000B9A466 /* MutexLock.m */,
+				E781A5FB20E9D53C00B9A466 /* MutexRecursiveLock.h */,
+				E781A5FC20E9D53C00B9A466 /* MutexRecursiveLock.m */,
+				E781A60120E9F8D900B9A466 /* MutexConditionLock.h */,
+				E781A60220E9F8D900B9A466 /* MutexConditionLock.m */,
 			);
 			path = Lock;
+			sourceTree = "<group>";
+		};
+		E781A60420E9FD5300B9A466 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E781A60520E9FD5300B9A466 /* OtherViewController.h */,
+				E781A60A20E9FD5300B9A466 /* OtherViewController.m */,
+				E781A60920E9FD5300B9A466 /* SellTicketViewController.h */,
+				E781A60620E9FD5300B9A466 /* SellTicketViewController.m */,
+				E781A60B20E9FD5300B9A466 /* BankMoneyViewController.h */,
+				E781A60820E9FD5300B9A466 /* BankMoneyViewController.m */,
+				E781A60C20E9FD5300B9A466 /* ViewController.h */,
+				E781A60720E9FD5300B9A466 /* ViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,13 +323,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E781A5AC20E5FC0E00B9A466 /* ViewController.m in Sources */,
+				E781A5FD20E9D53C00B9A466 /* MutexRecursiveLock.m in Sources */,
+				E781A60320E9F8D900B9A466 /* MutexConditionLock.m in Sources */,
 				E781A5B720E5FC1000B9A466 /* main.m in Sources */,
 				E781A5A920E5FC0E00B9A466 /* AppDelegate.m in Sources */,
+				E781A60E20E9FD5300B9A466 /* ViewController.m in Sources */,
 				E781A5F420E9B68000B9A466 /* NormalTips.m in Sources */,
 				E781A5F120E9B38D00B9A466 /* SpinLock.m in Sources */,
-				E781A5DE20E6071800B9A466 /* SellTicketViewController.m in Sources */,
-				E781A5DB20E6070A00B9A466 /* BankMoneyViewController.m in Sources */,
+				E781A5FA20E9C3F000B9A466 /* MutexLock.m in Sources */,
+				E781A60F20E9FD5300B9A466 /* BankMoneyViewController.m in Sources */,
+				E781A61020E9FD5300B9A466 /* OtherViewController.m in Sources */,
+				E781A5F720E9BF2400B9A466 /* UnfairLock.m in Sources */,
+				E781A60D20E9FD5300B9A466 /* SellTicketViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

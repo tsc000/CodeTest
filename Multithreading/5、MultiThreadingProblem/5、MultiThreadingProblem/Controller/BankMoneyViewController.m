@@ -8,10 +8,14 @@
 
 #import "BankMoneyViewController.h"
 #import "SpinLock.h"
+#import "UnfairLock.h"
+#import "MutexLock.h"
 
 @interface BankMoneyViewController ()
 
 @property (nonatomic, strong) SpinLock *spinLock;
+@property (nonatomic, strong) UnfairLock *unfairLock;
+@property (nonatomic, strong) MutexLock *mutexLock;
 
 @end
 
@@ -20,9 +24,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.spinLock = [[SpinLock alloc] init];
+    self.title = @"存取钱问题";
+//    self.spinLock = [[SpinLock alloc] init];
+//    [self.spinLock bankMoney];
     
-    [self.spinLock bankMoney];
+//    //不公平锁
+//    self.unfairLock = [[UnfairLock alloc] init];
+//    [self.unfairLock bankMoney];
+    
+    //互斥锁
+    self.mutexLock = [[MutexLock alloc] init];
+    [self.mutexLock bankMoney];
 }
 
 @end

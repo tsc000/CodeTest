@@ -1,5 +1,5 @@
 //
-//  SpinLock.h
+//  MutexRecursiveLock.h
 //  5、MultiThreadingProblem
 //
 //  Created by 童世超 on 2018/7/2.
@@ -8,7 +8,9 @@
 
 #import "NormalTips.h"
 
-//自旋锁已经被 遗弃
-@interface SpinLock : NormalTips
+//递归互斥锁
+@interface MutexRecursiveLock : NormalTips
+
+- (void)recursiveTest;
 
 @end

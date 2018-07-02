@@ -1,5 +1,5 @@
 //
-//  SpinLock.h
+//  UnfairLock.h
 //  5、MultiThreadingProblem
 //
 //  Created by 童世超 on 2018/7/2.
@@ -8,7 +8,7 @@
 
 #import "NormalTips.h"
 
-//自旋锁已经被 遗弃
-@interface SpinLock : NormalTips
+//不公平锁  休眠
+@interface UnfairLock : NormalTips
 
 @end
