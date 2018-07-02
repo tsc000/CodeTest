@@ -17,6 +17,8 @@
 		E781A5CC20E5FC1000B9A466 /* __MultiThreadingProblemUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5CB20E5FC1000B9A466 /* __MultiThreadingProblemUITests.m */; };
 		E781A5DB20E6070A00B9A466 /* BankMoneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5DA20E6070A00B9A466 /* BankMoneyViewController.m */; };
 		E781A5DE20E6071800B9A466 /* SellTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5DD20E6071700B9A466 /* SellTicketViewController.m */; };
+		E781A5F120E9B38D00B9A466 /* SpinLock.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5F020E9B38D00B9A466 /* SpinLock.m */; };
+		E781A5F420E9B68000B9A466 /* NormalTips.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5F220E9B68000B9A466 /* NormalTips.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,10 @@
 		E781A5DA20E6070A00B9A466 /* BankMoneyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankMoneyViewController.m; sourceTree = "<group>"; };
 		E781A5DC20E6071700B9A466 /* SellTicketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SellTicketViewController.h; sourceTree = "<group>"; };
 		E781A5DD20E6071700B9A466 /* SellTicketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SellTicketViewController.m; sourceTree = "<group>"; };
+		E781A5EF20E9B38D00B9A466 /* SpinLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpinLock.h; sourceTree = "<group>"; };
+		E781A5F020E9B38D00B9A466 /* SpinLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpinLock.m; sourceTree = "<group>"; };
+		E781A5F220E9B68000B9A466 /* NormalTips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalTips.m; sourceTree = "<group>"; };
+		E781A5F320E9B68000B9A466 /* NormalTips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalTips.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 		E781A5A620E5FC0E00B9A466 /* 5、MultiThreadingProblem */ = {
 			isa = PBXGroup;
 			children = (
+				E781A5DF20E9B03C00B9A466 /* Lock */,
 				E781A5A720E5FC0E00B9A466 /* AppDelegate.h */,
 				E781A5A820E5FC0E00B9A466 /* AppDelegate.m */,
 				E781A5AA20E5FC0E00B9A466 /* ViewController.h */,
@@ -140,6 +147,17 @@
 				E781A5CD20E5FC1000B9A466 /* Info.plist */,
 			);
 			path = "5、MultiThreadingProblemUITests";
+			sourceTree = "<group>";
+		};
+		E781A5DF20E9B03C00B9A466 /* Lock */ = {
+			isa = PBXGroup;
+			children = (
+				E781A5F320E9B68000B9A466 /* NormalTips.h */,
+				E781A5F220E9B68000B9A466 /* NormalTips.m */,
+				E781A5EF20E9B38D00B9A466 /* SpinLock.h */,
+				E781A5F020E9B38D00B9A466 /* SpinLock.m */,
+			);
+			path = Lock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +293,8 @@
 				E781A5AC20E5FC0E00B9A466 /* ViewController.m in Sources */,
 				E781A5B720E5FC1000B9A466 /* main.m in Sources */,
 				E781A5A920E5FC0E00B9A466 /* AppDelegate.m in Sources */,
+				E781A5F420E9B68000B9A466 /* NormalTips.m in Sources */,
+				E781A5F120E9B38D00B9A466 /* SpinLock.m in Sources */,
 				E781A5DE20E6071800B9A466 /* SellTicketViewController.m in Sources */,
 				E781A5DB20E6070A00B9A466 /* BankMoneyViewController.m in Sources */,
 			);
