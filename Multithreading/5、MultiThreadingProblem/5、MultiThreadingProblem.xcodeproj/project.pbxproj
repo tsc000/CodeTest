@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E781A5A920E5FC0E00B9A466 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5A820E5FC0E00B9A466 /* AppDelegate.m */; };
+		E781A5AC20E5FC0E00B9A466 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5AB20E5FC0E00B9A466 /* ViewController.m */; };
+		E781A5AF20E5FC0E00B9A466 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E781A5AD20E5FC0E00B9A466 /* Main.storyboard */; };
+		E781A5B120E5FC1000B9A466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E781A5B020E5FC1000B9A466 /* Assets.xcassets */; };
+		E781A5B420E5FC1000B9A466 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E781A5B220E5FC1000B9A466 /* LaunchScreen.storyboard */; };
+		E781A5B720E5FC1000B9A466 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5B620E5FC1000B9A466 /* main.m */; };
+		E781A5C120E5FC1000B9A466 /* __MultiThreadingProblemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5C020E5FC1000B9A466 /* __MultiThreadingProblemTests.m */; };
+		E781A5CC20E5FC1000B9A466 /* __MultiThreadingProblemUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5CB20E5FC1000B9A466 /* __MultiThreadingProblemUITests.m */; };
+		E781A5DB20E6070A00B9A466 /* BankMoneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5DA20E6070A00B9A466 /* BankMoneyViewController.m */; };
+		E781A5DE20E6071800B9A466 /* SellTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A5DD20E6071700B9A466 /* SellTicketViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E781A5BD20E5FC1000B9A466 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E781A59C20E5FC0E00B9A466 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E781A5A320E5FC0E00B9A466;
+			remoteInfo = "5、MultiThreadingProblem";
+		};
+		E781A5C820E5FC1000B9A466 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E781A59C20E5FC0E00B9A466 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E781A5A320E5FC0E00B9A466;
+			remoteInfo = "5、MultiThreadingProblem";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E781A5A420E5FC0E00B9A466 /* 5、MultiThreadingProblem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "5、MultiThreadingProblem.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E781A5A720E5FC0E00B9A466 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E781A5A820E5FC0E00B9A466 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E781A5AA20E5FC0E00B9A466 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E781A5AB20E5FC0E00B9A466 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E781A5AE20E5FC0E00B9A466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E781A5B020E5FC1000B9A466 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E781A5B320E5FC1000B9A466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E781A5B520E5FC1000B9A466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E781A5B620E5FC1000B9A466 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E781A5BC20E5FC1000B9A466 /* 5、MultiThreadingProblemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "5、MultiThreadingProblemTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E781A5C020E5FC1000B9A466 /* __MultiThreadingProblemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __MultiThreadingProblemTests.m; sourceTree = "<group>"; };
+		E781A5C220E5FC1000B9A466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E781A5C720E5FC1000B9A466 /* 5、MultiThreadingProblemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "5、MultiThreadingProblemUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E781A5CB20E5FC1000B9A466 /* __MultiThreadingProblemUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __MultiThreadingProblemUITests.m; sourceTree = "<group>"; };
+		E781A5CD20E5FC1000B9A466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E781A5D920E6070A00B9A466 /* BankMoneyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankMoneyViewController.h; sourceTree = "<group>"; };
+		E781A5DA20E6070A00B9A466 /* BankMoneyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankMoneyViewController.m; sourceTree = "<group>"; };
+		E781A5DC20E6071700B9A466 /* SellTicketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SellTicketViewController.h; sourceTree = "<group>"; };
+		E781A5DD20E6071700B9A466 /* SellTicketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SellTicketViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E781A5A120E5FC0E00B9A466 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E781A5B920E5FC1000B9A466 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E781A5C420E5FC1000B9A466 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E781A59B20E5FC0E00B9A466 = {
+			isa = PBXGroup;
+			children = (
+				E781A5A620E5FC0E00B9A466 /* 5、MultiThreadingProblem */,
+				E781A5BF20E5FC1000B9A466 /* 5、MultiThreadingProblemTests */,
+				E781A5CA20E5FC1000B9A466 /* 5、MultiThreadingProblemUITests */,
+				E781A5A520E5FC0E00B9A466 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E781A5A520E5FC0E00B9A466 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E781A5A420E5FC0E00B9A466 /* 5、MultiThreadingProblem.app */,
+				E781A5BC20E5FC1000B9A466 /* 5、MultiThreadingProblemTests.xctest */,
+				E781A5C720E5FC1000B9A466 /* 5、MultiThreadingProblemUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E781A5A620E5FC0E00B9A466 /* 5、MultiThreadingProblem */ = {
+			isa = PBXGroup;
+			children = (
+				E781A5A720E5FC0E00B9A466 /* AppDelegate.h */,
+				E781A5A820E5FC0E00B9A466 /* AppDelegate.m */,
+				E781A5AA20E5FC0E00B9A466 /* ViewController.h */,
+				E781A5AB20E5FC0E00B9A466 /* ViewController.m */,
+				E781A5AD20E5FC0E00B9A466 /* Main.storyboard */,
+				E781A5B020E5FC1000B9A466 /* Assets.xcassets */,
+				E781A5B220E5FC1000B9A466 /* LaunchScreen.storyboard */,
+				E781A5B520E5FC1000B9A466 /* Info.plist */,
+				E781A5B620E5FC1000B9A466 /* main.m */,
+				E781A5D920E6070A00B9A466 /* BankMoneyViewController.h */,
+				E781A5DA20E6070A00B9A466 /* BankMoneyViewController.m */,
+				E781A5DC20E6071700B9A466 /* SellTicketViewController.h */,
+				E781A5DD20E6071700B9A466 /* SellTicketViewController.m */,
+			);
+			path = "5、MultiThreadingProblem";
+			sourceTree = "<group>";
+		};
+		E781A5BF20E5FC1000B9A466 /* 5、MultiThreadingProblemTests */ = {
+			isa = PBXGroup;
+			children = (
+				E781A5C020E5FC1000B9A466 /* __MultiThreadingProblemTests.m */,
+				E781A5C220E5FC1000B9A466 /* Info.plist */,
+			);
+			path = "5、MultiThreadingProblemTests";
+			sourceTree = "<group>";
+		};
+		E781A5CA20E5FC1000B9A466 /* 5、MultiThreadingProblemUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E781A5CB20E5FC1000B9A466 /* __MultiThreadingProblemUITests.m */,
+				E781A5CD20E5FC1000B9A466 /* Info.plist */,
+			);
+			path = "5、MultiThreadingProblemUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E781A5A320E5FC0E00B9A466 /* 5、MultiThreadingProblem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E781A5D020E5FC1000B9A466 /* Build configuration list for PBXNativeTarget "5、MultiThreadingProblem" */;
+			buildPhases = (
+				E781A5A020E5FC0E00B9A466 /* Sources */,
+				E781A5A120E5FC0E00B9A466 /* Frameworks */,
+				E781A5A220E5FC0E00B9A466 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "5、MultiThreadingProblem";
+			productName = "5、MultiThreadingProblem";
+			productReference = E781A5A420E5FC0E00B9A466 /* 5、MultiThreadingProblem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E781A5BB20E5FC1000B9A466 /* 5、MultiThreadingProblemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E781A5D320E5FC1000B9A466 /* Build configuration list for PBXNativeTarget "5、MultiThreadingProblemTests" */;
+			buildPhases = (
+				E781A5B820E5FC1000B9A466 /* Sources */,
+				E781A5B920E5FC1000B9A466 /* Frameworks */,
+				E781A5BA20E5FC1000B9A466 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E781A5BE20E5FC1000B9A466 /* PBXTargetDependency */,
+			);
+			name = "5、MultiThreadingProblemTests";
+			productName = "5、MultiThreadingProblemTests";
+			productReference = E781A5BC20E5FC1000B9A466 /* 5、MultiThreadingProblemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E781A5C620E5FC1000B9A466 /* 5、MultiThreadingProblemUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E781A5D620E5FC1000B9A466 /* Build configuration list for PBXNativeTarget "5、MultiThreadingProblemUITests" */;
+			buildPhases = (
+				E781A5C320E5FC1000B9A466 /* Sources */,
+				E781A5C420E5FC1000B9A466 /* Frameworks */,
+				E781A5C520E5FC1000B9A466 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E781A5C920E5FC1000B9A466 /* PBXTargetDependency */,
+			);
+			name = "5、MultiThreadingProblemUITests";
+			productName = "5、MultiThreadingProblemUITests";
+			productReference = E781A5C720E5FC1000B9A466 /* 5、MultiThreadingProblemUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E781A59C20E5FC0E00B9A466 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "童世超";
+				TargetAttributes = {
+					E781A5A320E5FC0E00B9A466 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					E781A5BB20E5FC1000B9A466 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = E781A5A320E5FC0E00B9A466;
+					};
+					E781A5C620E5FC1000B9A466 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = E781A5A320E5FC0E00B9A466;
+					};
+				};
+			};
+			buildConfigurationList = E781A59F20E5FC0E00B9A466 /* Build configuration list for PBXProject "5、MultiThreadingProblem" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E781A59B20E5FC0E00B9A466;
+			productRefGroup = E781A5A520E5FC0E00B9A466 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E781A5A320E5FC0E00B9A466 /* 5、MultiThreadingProblem */,
+				E781A5BB20E5FC1000B9A466 /* 5、MultiThreadingProblemTests */,
+				E781A5C620E5FC1000B9A466 /* 5、MultiThreadingProblemUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E781A5A220E5FC0E00B9A466 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E781A5B420E5FC1000B9A466 /* LaunchScreen.storyboard in Resources */,
+				E781A5B120E5FC1000B9A466 /* Assets.xcassets in Resources */,
+				E781A5AF20E5FC0E00B9A466 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E781A5BA20E5FC1000B9A466 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E781A5C520E5FC1000B9A466 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E781A5A020E5FC0E00B9A466 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E781A5AC20E5FC0E00B9A466 /* ViewController.m in Sources */,
+				E781A5B720E5FC1000B9A466 /* main.m in Sources */,
+				E781A5A920E5FC0E00B9A466 /* AppDelegate.m in Sources */,
+				E781A5DE20E6071800B9A466 /* SellTicketViewController.m in Sources */,
+				E781A5DB20E6070A00B9A466 /* BankMoneyViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E781A5B820E5FC1000B9A466 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E781A5C120E5FC1000B9A466 /* __MultiThreadingProblemTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E781A5C320E5FC1000B9A466 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E781A5CC20E5FC1000B9A466 /* __MultiThreadingProblemUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E781A5BE20E5FC1000B9A466 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E781A5A320E5FC0E00B9A466 /* 5、MultiThreadingProblem */;
+			targetProxy = E781A5BD20E5FC1000B9A466 /* PBXContainerItemProxy */;
+		};
+		E781A5C920E5FC1000B9A466 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E781A5A320E5FC0E00B9A466 /* 5、MultiThreadingProblem */;
+			targetProxy = E781A5C820E5FC1000B9A466 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E781A5AD20E5FC0E00B9A466 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E781A5AE20E5FC0E00B9A466 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E781A5B220E5FC1000B9A466 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E781A5B320E5FC1000B9A466 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E781A5CE20E5FC1000B9A466 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E781A5CF20E5FC1000B9A466 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E781A5D120E5FC1000B9A466 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SP9H6353S3;
+				INFOPLIST_FILE = "5、MultiThreadingProblem/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tsc.--MultiThreadingProblem";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E781A5D220E5FC1000B9A466 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SP9H6353S3;
+				INFOPLIST_FILE = "5、MultiThreadingProblem/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tsc.--MultiThreadingProblem";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E781A5D420E5FC1000B9A466 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SP9H6353S3;
+				INFOPLIST_FILE = "5、MultiThreadingProblemTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tsc.--MultiThreadingProblemTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/5、MultiThreadingProblem.app/5、MultiThreadingProblem";
+			};
+			name = Debug;
+		};
+		E781A5D520E5FC1000B9A466 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SP9H6353S3;
+				INFOPLIST_FILE = "5、MultiThreadingProblemTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tsc.--MultiThreadingProblemTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/5、MultiThreadingProblem.app/5、MultiThreadingProblem";
+			};
+			name = Release;
+		};
+		E781A5D720E5FC1000B9A466 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SP9H6353S3;
+				INFOPLIST_FILE = "5、MultiThreadingProblemUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tsc.--MultiThreadingProblemUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "5、MultiThreadingProblem";
+			};
+			name = Debug;
+		};
+		E781A5D820E5FC1000B9A466 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SP9H6353S3;
+				INFOPLIST_FILE = "5、MultiThreadingProblemUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tsc.--MultiThreadingProblemUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "5、MultiThreadingProblem";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E781A59F20E5FC0E00B9A466 /* Build configuration list for PBXProject "5、MultiThreadingProblem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E781A5CE20E5FC1000B9A466 /* Debug */,
+				E781A5CF20E5FC1000B9A466 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E781A5D020E5FC1000B9A466 /* Build configuration list for PBXNativeTarget "5、MultiThreadingProblem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E781A5D120E5FC1000B9A466 /* Debug */,
+				E781A5D220E5FC1000B9A466 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E781A5D320E5FC1000B9A466 /* Build configuration list for PBXNativeTarget "5、MultiThreadingProblemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E781A5D420E5FC1000B9A466 /* Debug */,
+				E781A5D520E5FC1000B9A466 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E781A5D620E5FC1000B9A466 /* Build configuration list for PBXNativeTarget "5、MultiThreadingProblemUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E781A5D720E5FC1000B9A466 /* Debug */,
+				E781A5D820E5FC1000B9A466 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E781A59C20E5FC0E00B9A466 /* Project object */;
+}
