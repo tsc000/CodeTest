@@ -10,12 +10,16 @@
 #import "SpinLock.h"
 #import "UnfairLock.h"
 #import "MutexLock.h"
+#import "NSLockDemo.h"
+#import "SerialQueueSync.h"
 
 @interface SellTicketViewController ()
 
 @property (nonatomic, strong) SpinLock *spinLock;
 @property (nonatomic, strong) UnfairLock *unfairLock;
 @property (nonatomic, strong) MutexLock *mutexLock;
+@property (nonatomic, strong) NSLockDemo *nslockLock;
+@property (nonatomic, strong) SerialQueueSync *serialQueueSync;
 
 @end
 
@@ -33,9 +37,17 @@
 //    self.unfairLock = [[UnfairLock alloc] init];
 //    [self.unfairLock sellTickets];
     
-    //互斥锁
-    self.mutexLock = [[MutexLock alloc] init];
-    [self.mutexLock sellTickets];
+//    //互斥锁
+//    self.mutexLock = [[MutexLock alloc] init];
+//    [self.mutexLock sellTickets];
+    
+//    //mutex对象封装
+//    self.nslockLock = [[NSLockDemo alloc] init];
+//    [self.nslockLock sellTickets];
+    
+    //串行队列保证任务同步
+    self.serialQueueSync = [[SerialQueueSync alloc] init];
+    [self.serialQueueSync sellTickets];
 }
 
 @end

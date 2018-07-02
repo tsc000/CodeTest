@@ -56,4 +56,7 @@
     
 }
 
+- (void)dealloc {
+    pthread_mutex_destroy(&_lock);
+}
 @end

@@ -10,12 +10,14 @@
 #import "SpinLock.h"
 #import "UnfairLock.h"
 #import "MutexLock.h"
+#import "NSLockDemo.h"
 
 @interface BankMoneyViewController ()
 
 @property (nonatomic, strong) SpinLock *spinLock;
 @property (nonatomic, strong) UnfairLock *unfairLock;
 @property (nonatomic, strong) MutexLock *mutexLock;
+@property (nonatomic, strong) NSLockDemo *nslockLock;
 
 @end
 
@@ -32,9 +34,14 @@
 //    self.unfairLock = [[UnfairLock alloc] init];
 //    [self.unfairLock bankMoney];
     
-    //互斥锁
-    self.mutexLock = [[MutexLock alloc] init];
-    [self.mutexLock bankMoney];
+//    //互斥锁
+//    self.mutexLock = [[MutexLock alloc] init];
+//    [self.mutexLock bankMoney];
+    
+    //mutex对象封装
+    self.nslockLock = [[NSLockDemo alloc] init];
+    [self.nslockLock bankMoney];
+    
 }
 
 @end

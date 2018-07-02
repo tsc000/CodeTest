@@ -61,14 +61,14 @@
 
 - (NSMutableArray *)dataArray {
     if (!_dataArray) {
-        _dataArray = [@[@"卖票问题", @"存取钱问题", @"互斥递归锁",  @"互斥条件锁"] mutableCopy];
+        _dataArray = [@[@"卖票问题", @"存取钱问题", @"互斥递归锁",  @"互斥条件锁", @"NSRecursiveLockDemo", @"NSConditionLockDemo"] mutableCopy];
     }
     return _dataArray;
 }
 
 - (NSMutableArray *)controllerArray {
     if (!_controllerArray) {
-        _controllerArray = [@[@"SellTicketViewController", @"BankMoneyViewController", @"OtherViewController", @"OtherViewController"] mutableCopy];
+        _controllerArray = [@[@"SellTicketViewController", @"BankMoneyViewController", @"OtherViewController", @"OtherViewController", @"OtherViewController", @"OtherViewController"] mutableCopy];
     }
     return _controllerArray;
 }
