@@ -31,6 +31,7 @@
 		E781A62820EAFFFC00B9A466 /* NSConditionLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A62720EAFFFC00B9A466 /* NSConditionLockDemo.m */; };
 		E781A62B20EB062200B9A466 /* Semaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A62A20EB062200B9A466 /* Semaphore.m */; };
 		E781A62E20EB0B3600B9A466 /* SemaphoreSync.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A62D20EB0B3600B9A466 /* SemaphoreSync.m */; };
+		E781A63120EB444C00B9A466 /* LockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A63020EB444C00B9A466 /* LockViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,8 @@
 		E781A62A20EB062200B9A466 /* Semaphore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Semaphore.m; sourceTree = "<group>"; };
 		E781A62C20EB0B3600B9A466 /* SemaphoreSync.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SemaphoreSync.h; sourceTree = "<group>"; };
 		E781A62D20EB0B3600B9A466 /* SemaphoreSync.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SemaphoreSync.m; sourceTree = "<group>"; };
+		E781A62F20EB444C00B9A466 /* LockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockViewController.h; sourceTree = "<group>"; };
+		E781A63020EB444C00B9A466 /* LockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +227,8 @@
 				E781A60820E9FD5300B9A466 /* BankMoneyViewController.m */,
 				E781A60C20E9FD5300B9A466 /* ViewController.h */,
 				E781A60720E9FD5300B9A466 /* ViewController.m */,
+				E781A62F20EB444C00B9A466 /* LockViewController.h */,
+				E781A63020EB444C00B9A466 /* LockViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -377,6 +382,7 @@
 				E781A5F720E9BF2400B9A466 /* UnfairLock.m in Sources */,
 				E781A62520EA26DC00B9A466 /* SerialQueueSync.m in Sources */,
 				E781A60D20E9FD5300B9A466 /* SellTicketViewController.m in Sources */,
+				E781A63120EB444C00B9A466 /* LockViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 
-@interface BankMoneyViewController : UIViewController
+@interface BankMoneyViewController : ViewController
 
 @end
