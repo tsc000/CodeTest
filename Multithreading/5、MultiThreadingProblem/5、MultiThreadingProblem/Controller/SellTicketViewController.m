@@ -12,6 +12,7 @@
 #import "MutexLock.h"
 #import "NSLockDemo.h"
 #import "SerialQueueSync.h"
+#import "SemaphoreSync.h"
 
 @interface SellTicketViewController ()
 
@@ -20,6 +21,7 @@
 @property (nonatomic, strong) MutexLock *mutexLock;
 @property (nonatomic, strong) NSLockDemo *nslockLock;
 @property (nonatomic, strong) SerialQueueSync *serialQueueSync;
+@property (nonatomic, strong) SemaphoreSync *semaphoreSync;
 
 @end
 
@@ -45,9 +47,12 @@
 //    self.nslockLock = [[NSLockDemo alloc] init];
 //    [self.nslockLock sellTickets];
     
-    //串行队列保证任务同步
-    self.serialQueueSync = [[SerialQueueSync alloc] init];
-    [self.serialQueueSync sellTickets];
+//    //串行队列保证任务同步
+//    self.serialQueueSync = [[SerialQueueSync alloc] init];
+//    [self.serialQueueSync sellTickets];
+    
+    self.semaphoreSync = [[SemaphoreSync alloc] init];
+    [self.semaphoreSync sellTickets];
 }
 
 @end

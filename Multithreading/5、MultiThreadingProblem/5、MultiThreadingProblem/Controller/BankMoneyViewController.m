@@ -11,6 +11,7 @@
 #import "UnfairLock.h"
 #import "MutexLock.h"
 #import "NSLockDemo.h"
+#import "SemaphoreSync.h"
 
 @interface BankMoneyViewController ()
 
@@ -18,6 +19,7 @@
 @property (nonatomic, strong) UnfairLock *unfairLock;
 @property (nonatomic, strong) MutexLock *mutexLock;
 @property (nonatomic, strong) NSLockDemo *nslockLock;
+@property (nonatomic, strong) SemaphoreSync *semaphoreSync;
 
 @end
 
@@ -38,9 +40,12 @@
 //    self.mutexLock = [[MutexLock alloc] init];
 //    [self.mutexLock bankMoney];
     
-    //mutex对象封装
-    self.nslockLock = [[NSLockDemo alloc] init];
-    [self.nslockLock bankMoney];
+//    //mutex对象封装
+//    self.nslockLock = [[NSLockDemo alloc] init];
+//    [self.nslockLock bankMoney];
+    
+    self.semaphoreSync = [[SemaphoreSync alloc] init];
+    [self.semaphoreSync bankMoney];
     
 }
 

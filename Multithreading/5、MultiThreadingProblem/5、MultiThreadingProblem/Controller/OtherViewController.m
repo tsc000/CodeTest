@@ -11,12 +11,16 @@
 #import "MutexConditionLock.h"
 #import "NSRecursiveLockDemo.h"
 #import "NSConditionDemo.h"
+#import "NSConditionLockDemo.h"
+#import "Semaphore.h"
 
 @interface OtherViewController ()
 @property (nonatomic, strong) MutexRecursiveLock *recursiveLock;
 @property (nonatomic, strong) MutexConditionLock *conditionLock;
 @property (nonatomic, strong) NSRecursiveLockDemo *nsRecursiveLock;
-@property (nonatomic, strong) NSConditionDemo *nsConditionLock;
+@property (nonatomic, strong) NSConditionDemo *nsCondition;
+@property (nonatomic, strong) NSConditionLockDemo *nsConditionLock;
+@property (nonatomic, strong) Semaphore *semaphore;
 
 @property (nonatomic, strong) NSMutableArray *selectorArray;
 @property (nonatomic, strong) NSMutableArray *titleArray;
@@ -55,22 +59,34 @@
 }
 
 //NSConditionLock
+- (void)NSConditionTest {
+    self.nsCondition= [[NSConditionDemo alloc] init];
+    [self.nsCondition conditionTest];
+}
+
+//线程依赖NSConditionLock
 - (void)NSConditionLockTest {
-    self.nsConditionLock = [[NSConditionDemo alloc] init];
-    [self.nsConditionLock conditionTest];
+    self.nsConditionLock = [[NSConditionLockDemo alloc] init];
+    [self.nsConditionLock conditionLockTest];
+}
+
+//dispatch_semaphore_t  信号量，最大并发数
+- (void)semaphoreMaxConcurrentCount {
+    self.semaphore = [[Semaphore alloc] init];
+    [self.semaphore semaphoreTest];
 }
 
 
 - (NSMutableArray *)selectorArray {
     if (!_selectorArray) {
-        _selectorArray = [@[@"recursiveLockTest", @"conditionLockTest", @"NSRecursiveLockTest", @"NSConditionLockTest"] mutableCopy];
+        _selectorArray = [@[@"recursiveLockTest", @"conditionLockTest", @"NSRecursiveLockTest", @"NSConditionTest", @"NSConditionLockTest", @"semaphoreMaxConcurrentCount"] mutableCopy];
     }
     return _selectorArray;
 }
 
 - (NSMutableArray *)titleArray {
     if (!_titleArray) {
-        _titleArray = [@[@"互斥递归锁测试", @"互斥条件锁测试", @"NSRecursiveLock", @"NSConditionLock"] mutableCopy];
+        _titleArray = [@[@"互斥递归锁测试", @"互斥条件锁测试", @"NSRecursiveLock", @"NSCondition", @"NSConditionLock", @"semaphore最大并发数"] mutableCopy];
     }
     return _titleArray;
 }
