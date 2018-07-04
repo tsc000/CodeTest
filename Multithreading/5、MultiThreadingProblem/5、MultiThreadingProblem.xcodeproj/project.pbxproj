@@ -32,6 +32,9 @@
 		E781A62B20EB062200B9A466 /* Semaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A62A20EB062200B9A466 /* Semaphore.m */; };
 		E781A62E20EB0B3600B9A466 /* SemaphoreSync.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A62D20EB0B3600B9A466 /* SemaphoreSync.m */; };
 		E781A63120EB444C00B9A466 /* LockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A63020EB444C00B9A466 /* LockViewController.m */; };
+		E781A63420EB5BAA00B9A466 /* SynchronizedDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A63320EB5BAA00B9A466 /* SynchronizedDemo.m */; };
+		E781A63720ECA30300B9A466 /* PTthreadRWLock.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A63620ECA30300B9A466 /* PTthreadRWLock.m */; };
+		E781A63A20ECA81D00B9A466 /* DispatchBarrierRWLock.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A63920ECA81D00B9A466 /* DispatchBarrierRWLock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +105,12 @@
 		E781A62D20EB0B3600B9A466 /* SemaphoreSync.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SemaphoreSync.m; sourceTree = "<group>"; };
 		E781A62F20EB444C00B9A466 /* LockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockViewController.h; sourceTree = "<group>"; };
 		E781A63020EB444C00B9A466 /* LockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockViewController.m; sourceTree = "<group>"; };
+		E781A63220EB5BAA00B9A466 /* SynchronizedDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynchronizedDemo.h; sourceTree = "<group>"; };
+		E781A63320EB5BAA00B9A466 /* SynchronizedDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynchronizedDemo.m; sourceTree = "<group>"; };
+		E781A63520ECA30300B9A466 /* PTthreadRWLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTthreadRWLock.h; sourceTree = "<group>"; };
+		E781A63620ECA30300B9A466 /* PTthreadRWLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTthreadRWLock.m; sourceTree = "<group>"; };
+		E781A63820ECA81D00B9A466 /* DispatchBarrierRWLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchBarrierRWLock.h; sourceTree = "<group>"; };
+		E781A63920ECA81D00B9A466 /* DispatchBarrierRWLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchBarrierRWLock.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +221,12 @@
 				E781A62A20EB062200B9A466 /* Semaphore.m */,
 				E781A62C20EB0B3600B9A466 /* SemaphoreSync.h */,
 				E781A62D20EB0B3600B9A466 /* SemaphoreSync.m */,
+				E781A63220EB5BAA00B9A466 /* SynchronizedDemo.h */,
+				E781A63320EB5BAA00B9A466 /* SynchronizedDemo.m */,
+				E781A63520ECA30300B9A466 /* PTthreadRWLock.h */,
+				E781A63620ECA30300B9A466 /* PTthreadRWLock.m */,
+				E781A63820ECA81D00B9A466 /* DispatchBarrierRWLock.h */,
+				E781A63920ECA81D00B9A466 /* DispatchBarrierRWLock.m */,
 			);
 			path = Lock;
 			sourceTree = "<group>";
@@ -376,12 +391,15 @@
 				E781A60E20E9FD5300B9A466 /* ViewController.m in Sources */,
 				E781A5F420E9B68000B9A466 /* NormalTips.m in Sources */,
 				E781A5F120E9B38D00B9A466 /* SpinLock.m in Sources */,
+				E781A63720ECA30300B9A466 /* PTthreadRWLock.m in Sources */,
 				E781A5FA20E9C3F000B9A466 /* MutexLock.m in Sources */,
 				E781A60F20E9FD5300B9A466 /* BankMoneyViewController.m in Sources */,
+				E781A63420EB5BAA00B9A466 /* SynchronizedDemo.m in Sources */,
 				E781A61020E9FD5300B9A466 /* OtherViewController.m in Sources */,
 				E781A5F720E9BF2400B9A466 /* UnfairLock.m in Sources */,
 				E781A62520EA26DC00B9A466 /* SerialQueueSync.m in Sources */,
 				E781A60D20E9FD5300B9A466 /* SellTicketViewController.m in Sources */,
+				E781A63A20ECA81D00B9A466 /* DispatchBarrierRWLock.m in Sources */,
 				E781A63120EB444C00B9A466 /* LockViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

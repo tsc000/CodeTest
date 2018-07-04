@@ -36,8 +36,7 @@
     
     pthread_mutexattr_t attr;
     pthread_mutexattr_init(&attr);
-    //    pthread_mutexattr_settype(&attr, PTHREAD_MUTEX_NORMAL);//死锁
-    pthread_mutexattr_settype(&attr, PTHREAD_MUTEX_RECURSIVE);
+    pthread_mutexattr_settype(&attr, PTHREAD_MUTEX_NORMAL);
     pthread_mutex_init(lock, &attr);
     pthread_mutexattr_destroy(&attr);
     

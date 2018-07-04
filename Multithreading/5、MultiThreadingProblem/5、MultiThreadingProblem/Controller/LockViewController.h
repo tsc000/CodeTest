@@ -10,9 +10,7 @@
 
 @interface LockViewController : UIViewController
 
-@property (nonatomic, assign) NSInteger index;  //决定执行哪个方法
-@property (nonatomic, assign) NSInteger type;   //决定整体的类型  0  1  <---> 卖票 和存取钱
-
+@property (nonatomic, assign) NSInteger type;   //决定执行哪个方法
 @property (nonatomic, strong) NSMutableArray *selectorArray;
 @property (nonatomic, strong) NSMutableArray *titleArray;
 
