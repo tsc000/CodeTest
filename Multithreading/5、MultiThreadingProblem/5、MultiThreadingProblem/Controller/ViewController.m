@@ -11,6 +11,7 @@
 #import "BankMoneyViewController.h"
 #import "OtherViewController.h"
 #import "LockViewController.h"
+#import "LockCompareViewController.h"
 
 @interface ViewController ()
 
@@ -33,7 +34,7 @@
 - (NSMutableArray *)dataArray {
     if (!_dataArray) {
         _dataArray = [@[
-                        @[@"1、SpinLock自旋锁-----卖票", @"2、unfair_lock-----卖票", @"3、pthread_mutex互斥锁-----卖票", @"4、NSLock-----卖票", @"串行队列-----卖票", @"5、semaphore信号量-----卖票", @"6、synchronized-----卖票"],
+                        @[@"各种锁加锁解锁时间对比", @"1、SpinLock自旋锁-----卖票", @"2、unfair_lock-----卖票", @"3、pthread_mutex互斥锁-----卖票", @"4、NSLock-----卖票", @"串行队列-----卖票", @"5、semaphore信号量-----卖票", @"6、synchronized-----卖票"],
                         @[@"SpinLock自旋锁-----存取钱", @"unfair_lock-----存取钱", @"pthread_mutex互斥锁-----存取钱", @"NSLock-----存取钱", @"串行队列-----存取钱", @"semaphore-----存取钱", @"synchronized-----存取钱"],
                         @[@"7、pthread_mutex-----互斥递归锁",  @"8、pthread_cond-----互斥条件锁", @"9、NSRecursiveLock", @"10、NSCondition", @"11、NSConditionLock线程依赖", @"dispatch_semaphore", @"pthread_rwlock_t读写锁", @"dispatch_barrier_async栅栏"]] mutableCopy];
 
@@ -76,6 +77,13 @@
 //    UIViewController *controller = [[class alloc] init];
 //    if (![controller isKindOfClass:[LockViewController class]]) return;
 //    LockViewController *c = (LockViewController *)controller;
+    
+    if (indexPath.section == 0 && indexPath.row == 0) {
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+        LockCompareViewController *compareController = [sb instantiateViewControllerWithIdentifier:@"LockCompareViewController"];
+        [self.navigationController pushViewController:compareController animated:true];
+        return;
+    }
     
     LockViewController *c = [[LockViewController alloc] init];
     c.type = indexPath.row;

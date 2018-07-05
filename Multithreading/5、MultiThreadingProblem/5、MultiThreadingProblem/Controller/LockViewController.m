@@ -55,6 +55,7 @@
     self.title = self.titleArray[self.type];
     
     
+    
     self.descLabel = [[UILabel alloc] init];
     self.descLabel.frame = self.view.frame;
     self.descLabel.numberOfLines = 0;

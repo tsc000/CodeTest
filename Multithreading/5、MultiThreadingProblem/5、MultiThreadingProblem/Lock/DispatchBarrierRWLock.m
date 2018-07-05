@@ -32,9 +32,6 @@
 //        });
    
         //测试barrier
-        dispatch_async(queue, ^{
-            [self write];
-        });
 
         dispatch_async(queue, ^{
             [self read];

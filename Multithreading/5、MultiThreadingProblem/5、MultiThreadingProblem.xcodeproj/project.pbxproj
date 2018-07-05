@@ -35,6 +35,7 @@
 		E781A63420EB5BAA00B9A466 /* SynchronizedDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A63320EB5BAA00B9A466 /* SynchronizedDemo.m */; };
 		E781A63720ECA30300B9A466 /* PTthreadRWLock.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A63620ECA30300B9A466 /* PTthreadRWLock.m */; };
 		E781A63A20ECA81D00B9A466 /* DispatchBarrierRWLock.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A63920ECA81D00B9A466 /* DispatchBarrierRWLock.m */; };
+		E781A63D20EE137500B9A466 /* LockCompareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E781A63C20EE137500B9A466 /* LockCompareViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,8 @@
 		E781A63620ECA30300B9A466 /* PTthreadRWLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTthreadRWLock.m; sourceTree = "<group>"; };
 		E781A63820ECA81D00B9A466 /* DispatchBarrierRWLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchBarrierRWLock.h; sourceTree = "<group>"; };
 		E781A63920ECA81D00B9A466 /* DispatchBarrierRWLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchBarrierRWLock.m; sourceTree = "<group>"; };
+		E781A63B20EE137500B9A466 /* LockCompareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockCompareViewController.h; sourceTree = "<group>"; };
+		E781A63C20EE137500B9A466 /* LockCompareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockCompareViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +247,8 @@
 				E781A60720E9FD5300B9A466 /* ViewController.m */,
 				E781A62F20EB444C00B9A466 /* LockViewController.h */,
 				E781A63020EB444C00B9A466 /* LockViewController.m */,
+				E781A63B20EE137500B9A466 /* LockCompareViewController.h */,
+				E781A63C20EE137500B9A466 /* LockCompareViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -383,6 +388,7 @@
 				E781A62B20EB062200B9A466 /* Semaphore.m in Sources */,
 				E781A5FD20E9D53C00B9A466 /* MutexRecursiveLock.m in Sources */,
 				E781A62820EAFFFC00B9A466 /* NSConditionLockDemo.m in Sources */,
+				E781A63D20EE137500B9A466 /* LockCompareViewController.m in Sources */,
 				E781A62E20EB0B3600B9A466 /* SemaphoreSync.m in Sources */,
 				E781A60320E9F8D900B9A466 /* MutexConditionLock.m in Sources */,
 				E781A5B720E5FC1000B9A466 /* main.m in Sources */,
