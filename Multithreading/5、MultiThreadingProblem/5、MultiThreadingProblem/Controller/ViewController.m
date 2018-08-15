@@ -86,8 +86,12 @@
     }
     
     LockViewController *c = [[LockViewController alloc] init];
-    c.type = indexPath.row;
 
+    c.type = indexPath.row;
+    if (indexPath.section == 0) {
+        c.type --;
+    }
+    
     switch (indexPath.section) {
         case 0:     //卖票
             c.selectorArray = [@[@"spinLockTicketTest", @"unfairLockTicketTest", @"mutexLockTicketTest", @"NSLockTicketTest", @"serialQueueTicketTest", @"semaphoreTicketTest", @"synchronizedTicketTest"] mutableCopy];

@@ -7,3 +7,8 @@
 [Kenshin Cui's Blog](https://www.cnblogs.com/kenshincui/p/6823841.html)
 
 [Runtime](http://www.cocoachina.com/ios/20160523/16386.html)
+
+# 文章
+
+[pod install vs. pod update](https://guides.cocoapods.org/using/pod-install-vs-update.html)
+
