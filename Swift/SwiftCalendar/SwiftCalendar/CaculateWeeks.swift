@@ -104,19 +104,24 @@ class CaculateWeeks: NSObject {
             //如果是周日的索引
             if weekIdx == 6 {
                 
-                if let idx = monthArray.index(of: currentDateString) {
-                    currentWeekPostition = idx + dataSource.count;
-                }
                 dataSource.append("\(monthArray.first ?? "")-\(monthArray.last ?? "")")
+                
+                if let idx = monthArray.index(of: currentDateString) {
+                    currentWeekPostition = dataSource.count - 1;
+                }
+                
                 monthArray.removeAll()
             }
         }
         
         if monthArray.count != 0 {
-            if let idx = monthArray.index(of: currentDateString) {
-                currentWeekPostition = idx + dataSource.count;
-            }
+            
             dataSource.append("\(monthArray.first ?? "")-\(monthArray.last ?? "")")
+            
+            if let idx = monthArray.index(of: currentDateString) {
+                currentWeekPostition = dataSource.count - 1;
+            }
+            
             monthArray.removeAll()
         }
         return dataSource
